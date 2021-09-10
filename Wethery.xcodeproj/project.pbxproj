@@ -1,0 +1,492 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7C56F8A626EA3D7E0027CC6C /* AddressToCoordinate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C56F8A526EA3D7E0027CC6C /* AddressToCoordinate.swift */; };
+		7C56F8A726EA3D7E0027CC6C /* AddressToCoordinate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C56F8A526EA3D7E0027CC6C /* AddressToCoordinate.swift */; };
+		7C56F8A926EA4C8F0027CC6C /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C56F8A826EA4C8F0027CC6C /* NetworkManager.swift */; };
+		7C56F8AA26EA4C8F0027CC6C /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C56F8A826EA4C8F0027CC6C /* NetworkManager.swift */; };
+		7C7BEAF126E8714B00044459 /* WetheryApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C7BEADE26E8714A00044459 /* WetheryApp.swift */; };
+		7C7BEAF226E8714B00044459 /* WetheryApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C7BEADE26E8714A00044459 /* WetheryApp.swift */; };
+		7C7BEAF326E8714B00044459 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C7BEADF26E8714A00044459 /* ContentView.swift */; };
+		7C7BEAF426E8714B00044459 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C7BEADF26E8714A00044459 /* ContentView.swift */; };
+		7C7BEAF526E8714B00044459 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7C7BEAE026E8714B00044459 /* Assets.xcassets */; };
+		7C7BEAF626E8714B00044459 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7C7BEAE026E8714B00044459 /* Assets.xcassets */; };
+		7C95E71E26EB90B8003EC098 /* APIKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C95E71D26EB90B8003EC098 /* APIKey.swift */; };
+		7C95E71F26EB90B8003EC098 /* APIKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C95E71D26EB90B8003EC098 /* APIKey.swift */; };
+		7CEBC55426EAB2C400882C8F /* Forecast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CEBC55326EAB2C400882C8F /* Forecast.swift */; };
+		7CEBC55526EAB2C400882C8F /* Forecast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CEBC55326EAB2C400882C8F /* Forecast.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		7C56F8A526EA3D7E0027CC6C /* AddressToCoordinate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressToCoordinate.swift; sourceTree = "<group>"; };
+		7C56F8A826EA4C8F0027CC6C /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		7C7BEADE26E8714A00044459 /* WetheryApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WetheryApp.swift; sourceTree = "<group>"; };
+		7C7BEADF26E8714A00044459 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		7C7BEAE026E8714B00044459 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7C7BEAE526E8714B00044459 /* Wethery.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Wethery.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7C7BEAE826E8714B00044459 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7C7BEAED26E8714B00044459 /* Wethery.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Wethery.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7C7BEAEF26E8714B00044459 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7C7BEAF026E8714B00044459 /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
+		7C95E71D26EB90B8003EC098 /* APIKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = APIKey.swift; path = Shared/APIKey.swift; sourceTree = SOURCE_ROOT; };
+		7CEBC55326EAB2C400882C8F /* Forecast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Forecast.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7C7BEAE226E8714B00044459 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7C7BEAEA26E8714B00044459 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7C56F8A426EA3D1A0027CC6C /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				7C56F8A526EA3D7E0027CC6C /* AddressToCoordinate.swift */,
+				7C56F8A826EA4C8F0027CC6C /* NetworkManager.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		7C56F8AB26EA4CB60027CC6C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				7CEBC55326EAB2C400882C8F /* Forecast.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		7C7BEAD826E8714A00044459 = {
+			isa = PBXGroup;
+			children = (
+				7C7BEADD26E8714A00044459 /* Shared */,
+				7C7BEAE726E8714B00044459 /* iOS */,
+				7C7BEAEE26E8714B00044459 /* macOS */,
+				7C7BEAE626E8714B00044459 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7C7BEADD26E8714A00044459 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				7C7BEADE26E8714A00044459 /* WetheryApp.swift */,
+				7C95E71D26EB90B8003EC098 /* APIKey.swift */,
+				7C95E72026EB915D003EC098 /* View */,
+				7C56F8AB26EA4CB60027CC6C /* Model */,
+				7C56F8A426EA3D1A0027CC6C /* Utilities */,
+				7C7BEAE026E8714B00044459 /* Assets.xcassets */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		7C7BEAE626E8714B00044459 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7C7BEAE526E8714B00044459 /* Wethery.app */,
+				7C7BEAED26E8714B00044459 /* Wethery.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7C7BEAE726E8714B00044459 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				7C7BEAE826E8714B00044459 /* Info.plist */,
+			);
+			path = iOS;
+			sourceTree = "<group>";
+		};
+		7C7BEAEE26E8714B00044459 /* macOS */ = {
+			isa = PBXGroup;
+			children = (
+				7C7BEAEF26E8714B00044459 /* Info.plist */,
+				7C7BEAF026E8714B00044459 /* macOS.entitlements */,
+			);
+			path = macOS;
+			sourceTree = "<group>";
+		};
+		7C95E72026EB915D003EC098 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				7C7BEADF26E8714A00044459 /* ContentView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7C7BEAE426E8714B00044459 /* Wethery (iOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7C7BEAF926E8714B00044459 /* Build configuration list for PBXNativeTarget "Wethery (iOS)" */;
+			buildPhases = (
+				7C7BEAE126E8714B00044459 /* Sources */,
+				7C7BEAE226E8714B00044459 /* Frameworks */,
+				7C7BEAE326E8714B00044459 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Wethery (iOS)";
+			productName = "Wethery (iOS)";
+			productReference = 7C7BEAE526E8714B00044459 /* Wethery.app */;
+			productType = "com.apple.product-type.application";
+		};
+		7C7BEAEC26E8714B00044459 /* Wethery (macOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7C7BEAFC26E8714B00044459 /* Build configuration list for PBXNativeTarget "Wethery (macOS)" */;
+			buildPhases = (
+				7C7BEAE926E8714B00044459 /* Sources */,
+				7C7BEAEA26E8714B00044459 /* Frameworks */,
+				7C7BEAEB26E8714B00044459 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Wethery (macOS)";
+			productName = "Wethery (macOS)";
+			productReference = 7C7BEAED26E8714B00044459 /* Wethery.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7C7BEAD926E8714A00044459 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					7C7BEAE426E8714B00044459 = {
+						CreatedOnToolsVersion = 12.5.1;
+					};
+					7C7BEAEC26E8714B00044459 = {
+						CreatedOnToolsVersion = 12.5.1;
+					};
+				};
+			};
+			buildConfigurationList = 7C7BEADC26E8714A00044459 /* Build configuration list for PBXProject "Wethery" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7C7BEAD826E8714A00044459;
+			productRefGroup = 7C7BEAE626E8714B00044459 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7C7BEAE426E8714B00044459 /* Wethery (iOS) */,
+				7C7BEAEC26E8714B00044459 /* Wethery (macOS) */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7C7BEAE326E8714B00044459 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7C7BEAF526E8714B00044459 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7C7BEAEB26E8714B00044459 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7C7BEAF626E8714B00044459 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7C7BEAE126E8714B00044459 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7C56F8A926EA4C8F0027CC6C /* NetworkManager.swift in Sources */,
+				7C7BEAF326E8714B00044459 /* ContentView.swift in Sources */,
+				7C7BEAF126E8714B00044459 /* WetheryApp.swift in Sources */,
+				7C56F8A626EA3D7E0027CC6C /* AddressToCoordinate.swift in Sources */,
+				7C95E71E26EB90B8003EC098 /* APIKey.swift in Sources */,
+				7CEBC55426EAB2C400882C8F /* Forecast.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7C7BEAE926E8714B00044459 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7C56F8AA26EA4C8F0027CC6C /* NetworkManager.swift in Sources */,
+				7C7BEAF426E8714B00044459 /* ContentView.swift in Sources */,
+				7C7BEAF226E8714B00044459 /* WetheryApp.swift in Sources */,
+				7C56F8A726EA3D7E0027CC6C /* AddressToCoordinate.swift in Sources */,
+				7C95E71F26EB90B8003EC098 /* APIKey.swift in Sources */,
+				7CEBC55526EAB2C400882C8F /* Forecast.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		7C7BEAF726E8714B00044459 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		7C7BEAF826E8714B00044459 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		7C7BEAFA26E8714B00044459 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4S979PJSPU;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = iOS/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.EZDevelopments.Wethery;
+				PRODUCT_NAME = Wethery;
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7C7BEAFB26E8714B00044459 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4S979PJSPU;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = iOS/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.EZDevelopments.Wethery;
+				PRODUCT_NAME = Wethery;
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7C7BEAFD26E8714B00044459 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 4S979PJSPU;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = macOS/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.EZDevelopments.Wethery;
+				PRODUCT_NAME = Wethery;
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		7C7BEAFE26E8714B00044459 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 4S979PJSPU;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = macOS/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.EZDevelopments.Wethery;
+				PRODUCT_NAME = Wethery;
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7C7BEADC26E8714A00044459 /* Build configuration list for PBXProject "Wethery" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7C7BEAF726E8714B00044459 /* Debug */,
+				7C7BEAF826E8714B00044459 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7C7BEAF926E8714B00044459 /* Build configuration list for PBXNativeTarget "Wethery (iOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7C7BEAFA26E8714B00044459 /* Debug */,
+				7C7BEAFB26E8714B00044459 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7C7BEAFC26E8714B00044459 /* Build configuration list for PBXNativeTarget "Wethery (macOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7C7BEAFD26E8714B00044459 /* Debug */,
+				7C7BEAFE26E8714B00044459 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7C7BEAD926E8714A00044459 /* Project object */;
+}
