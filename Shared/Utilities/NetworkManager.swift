@@ -5,23 +5,32 @@
 //  Created by Ethan Zemelman on 2021-09-09.
 //
 
-import SwiftUI
+import Foundation
+import CoreLocation
 
-class API {
-    func getWeather(completion: @escaping (Forecast) -> ()) {
-        guard let url = URL(string: "https://api.openweathermap.org/data/2.5/onecall?lat=43.8308&lon=79.4570&exclude=minutely&units=metric&appid=\(APIKey)") else { return }
+class NetworkManager {
+    
+    static let shared = NetworkManager()
+        
+    func getWeather(from coordinate: CLLocationCoordinate2D, in unit: String = "metric", completed: @escaping (Result<Forecast,APIError>) -> ()) {
+        let forecastURL = "https://api.openweathermap.org/data/2.5/onecall?appid=\(APIKey)&lat=\(coordinate.latitude)&lon=\(coordinate.longitude)&units=\(unit)&exclude=minutely"
+        
+        guard let url = URL(string: forecastURL) else { completed(.failure(.invalidURL)); return }
         
         URLSession.shared.dataTask(with: url) { data, response, error in
-            guard let data = data else { print("Data was nil"); return }
-            guard error == nil else { print(error!); return }
+            guard error == nil else { completed(.failure(.unableToComplete)); return }
+            guard let data = data else { completed(.failure(.invalidData)); return }
             
             do {
-                let forecastData = try JSONDecoder().decode(Forecast.self, from: data)
+                let decoder = JSONDecoder()
+                decoder.dateDecodingStrategy = .secondsSince1970 // When it decodes a JSON object into a date it will use this method so the date shows up correctly
+                decoder.keyDecodingStrategy = .convertFromSnakeCase // Convert snake to camel case
+                let decodedData = try decoder.decode(Forecast.self, from: data)
                 
                 DispatchQueue.main.async {
-                    completion(forecastData)
+                    completed(.success(decodedData))
                 }
-            } catch { print(error) }
+            } catch { completed(.failure(.invalidData)) }
         }.resume()
     }
 }

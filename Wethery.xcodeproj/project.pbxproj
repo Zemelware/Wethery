@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		7C56F8A626EA3D7E0027CC6C /* AddressToCoordinate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C56F8A526EA3D7E0027CC6C /* AddressToCoordinate.swift */; };
-		7C56F8A726EA3D7E0027CC6C /* AddressToCoordinate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C56F8A526EA3D7E0027CC6C /* AddressToCoordinate.swift */; };
 		7C56F8A926EA4C8F0027CC6C /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C56F8A826EA4C8F0027CC6C /* NetworkManager.swift */; };
 		7C56F8AA26EA4C8F0027CC6C /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C56F8A826EA4C8F0027CC6C /* NetworkManager.swift */; };
 		7C7BEAF126E8714B00044459 /* WetheryApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C7BEADE26E8714A00044459 /* WetheryApp.swift */; };
@@ -19,12 +17,15 @@
 		7C7BEAF626E8714B00044459 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7C7BEAE026E8714B00044459 /* Assets.xcassets */; };
 		7C95E71E26EB90B8003EC098 /* APIKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C95E71D26EB90B8003EC098 /* APIKey.swift */; };
 		7C95E71F26EB90B8003EC098 /* APIKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C95E71D26EB90B8003EC098 /* APIKey.swift */; };
+		7C95E72326EB9F13003EC098 /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C95E72226EB9F13003EC098 /* ContentViewModel.swift */; };
+		7C95E72426EB9F13003EC098 /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C95E72226EB9F13003EC098 /* ContentViewModel.swift */; };
+		7CDADC2826EC686D00BD20D3 /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CDADC2726EC686D00BD20D3 /* APIError.swift */; };
+		7CDADC2926EC686D00BD20D3 /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CDADC2726EC686D00BD20D3 /* APIError.swift */; };
 		7CEBC55426EAB2C400882C8F /* Forecast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CEBC55326EAB2C400882C8F /* Forecast.swift */; };
 		7CEBC55526EAB2C400882C8F /* Forecast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CEBC55326EAB2C400882C8F /* Forecast.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		7C56F8A526EA3D7E0027CC6C /* AddressToCoordinate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressToCoordinate.swift; sourceTree = "<group>"; };
 		7C56F8A826EA4C8F0027CC6C /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		7C7BEADE26E8714A00044459 /* WetheryApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WetheryApp.swift; sourceTree = "<group>"; };
 		7C7BEADF26E8714A00044459 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -35,6 +36,8 @@
 		7C7BEAEF26E8714B00044459 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7C7BEAF026E8714B00044459 /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
 		7C95E71D26EB90B8003EC098 /* APIKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = APIKey.swift; path = Shared/APIKey.swift; sourceTree = SOURCE_ROOT; };
+		7C95E72226EB9F13003EC098 /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
+		7CDADC2726EC686D00BD20D3 /* APIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
 		7CEBC55326EAB2C400882C8F /* Forecast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Forecast.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -59,7 +62,7 @@
 		7C56F8A426EA3D1A0027CC6C /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
-				7C56F8A526EA3D7E0027CC6C /* AddressToCoordinate.swift */,
+				7CDADC2726EC686D00BD20D3 /* APIError.swift */,
 				7C56F8A826EA4C8F0027CC6C /* NetworkManager.swift */,
 			);
 			path = Utilities;
@@ -89,8 +92,9 @@
 				7C7BEADE26E8714A00044459 /* WetheryApp.swift */,
 				7C95E71D26EB90B8003EC098 /* APIKey.swift */,
 				7C95E72026EB915D003EC098 /* View */,
-				7C56F8AB26EA4CB60027CC6C /* Model */,
 				7C56F8A426EA3D1A0027CC6C /* Utilities */,
+				7C95E72126EB9E3F003EC098 /* ViewModel */,
+				7C56F8AB26EA4CB60027CC6C /* Model */,
 				7C7BEAE026E8714B00044459 /* Assets.xcassets */,
 			);
 			path = Shared;
@@ -128,6 +132,14 @@
 				7C7BEADF26E8714A00044459 /* ContentView.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		7C95E72126EB9E3F003EC098 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				7C95E72226EB9F13003EC098 /* ContentViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -230,7 +242,8 @@
 				7C56F8A926EA4C8F0027CC6C /* NetworkManager.swift in Sources */,
 				7C7BEAF326E8714B00044459 /* ContentView.swift in Sources */,
 				7C7BEAF126E8714B00044459 /* WetheryApp.swift in Sources */,
-				7C56F8A626EA3D7E0027CC6C /* AddressToCoordinate.swift in Sources */,
+				7C95E72326EB9F13003EC098 /* ContentViewModel.swift in Sources */,
+				7CDADC2826EC686D00BD20D3 /* APIError.swift in Sources */,
 				7C95E71E26EB90B8003EC098 /* APIKey.swift in Sources */,
 				7CEBC55426EAB2C400882C8F /* Forecast.swift in Sources */,
 			);
@@ -243,7 +256,8 @@
 				7C56F8AA26EA4C8F0027CC6C /* NetworkManager.swift in Sources */,
 				7C7BEAF426E8714B00044459 /* ContentView.swift in Sources */,
 				7C7BEAF226E8714B00044459 /* WetheryApp.swift in Sources */,
-				7C56F8A726EA3D7E0027CC6C /* AddressToCoordinate.swift in Sources */,
+				7C95E72426EB9F13003EC098 /* ContentViewModel.swift in Sources */,
+				7CDADC2926EC686D00BD20D3 /* APIError.swift in Sources */,
 				7C95E71F26EB90B8003EC098 /* APIKey.swift in Sources */,
 				7CEBC55526EAB2C400882C8F /* Forecast.swift in Sources */,
 			);
