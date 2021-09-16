@@ -32,7 +32,7 @@ struct ContentView: View {
                 }
                 
                 if let forecast = viewModel.forecast {
-                    Text(location.capitalized)
+                    Text(viewModel.cityName)
                         .font(.title)
                         .padding(.top, 10)
                     
