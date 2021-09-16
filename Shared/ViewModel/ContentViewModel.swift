@@ -10,7 +10,9 @@ import CoreLocation
 
 
 final class ContentViewModel: ObservableObject {
+    
     @Published var forecast: Forecast?
+    @Published var alertItem: AlertItem?
     
     let dateFormatter = DateFormatter()
     
@@ -29,18 +31,15 @@ final class ContentViewModel: ObservableObject {
                         self.forecast = forecast
                         
                         self.dateFormatter.dateFormat = "EEEE" // Display the date of the week
-//                        for day in forecast.daily {
-//                            print("\(self.dateFormatter.string(from: day.dt)) | \(day.temp.min) - \(day.temp.max)")
-//                        }
                         
                     case .failure(let error):
                         switch error {
                         case .invalidData:
-                            print("Invalid data")
+                            self.alertItem = AlertContext.invalidData
                         case .invalidURL:
-                            print("Invalid URL")
+                            self.alertItem = AlertContext.invalidURL
                         case .unableToComplete:
-                            print("Unable to complete")
+                            self.alertItem = AlertContext.unableToComplete
                         }
                     }
                 }
