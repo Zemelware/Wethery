@@ -34,23 +34,18 @@ final class ContentViewModel: ObservableObject {
                 }
                 self.cityName = city
                 
-                DispatchQueue.main.async {
-                    NetworkManager.shared.getWeather(from: coordinate) { result in
-                        switch result {
-                        case .success(let forecast):
-                            self.forecast = forecast
-                            self.dateFormatter.dateFormat = "EEEE" // Display the date of the week
-                            
-                        case .failure(let error):
-                            switch error {
-                            case .invalidData:
-                                self.alertItem = AlertContext.invalidData
-                            case .invalidURL:
-                                self.alertItem = AlertContext.invalidURL
-                            case .unableToComplete:
-                                self.alertItem = AlertContext.unableToComplete
-                            }
-                        }
+                Task {
+                    do {
+                        self.forecast = try await NetworkManager.shared.weather(from: coordinate)
+                        self.dateFormatter.dateFormat = "EEEE" // Display the date of the week
+                    } catch NetworkError.invalidData {
+                        self.alertItem = AlertContext.invalidData
+                    } catch NetworkError.invalidURL {
+                        self.alertItem = AlertContext.invalidURL
+                    } catch NetworkError.invalidResponse {
+                        self.alertItem = AlertContext.invalidResponse
+                    } catch {
+                        self.alertItem = AlertContext.unableToComplete
                     }
                 }
             }

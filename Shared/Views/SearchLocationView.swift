@@ -22,14 +22,13 @@ struct SearchLocationView: View {
                     .padding(8)
                     .background(Color.black.opacity(0.05))
                     .cornerRadius(10)
-                    .submitLabel(.done)
+                    .submitLabel(.search)
                     .onSubmit {
                         viewModel.getWeather(for: location) { locationIsValid in
                             if locationIsValid {
                                 dismiss()
                             }
                         }
-                        
                     }
                 
                 Button("Cancel", role: .cancel) { dismiss() }

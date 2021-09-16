@@ -7,8 +7,8 @@
 
 import Foundation
 
-enum APIError: Error {
-    case invalidURL
-    case unableToComplete
+enum NetworkError: Error {
     case invalidData
+    case invalidURL
+    case invalidResponse
 }
