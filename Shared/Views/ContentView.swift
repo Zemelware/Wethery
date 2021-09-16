@@ -11,7 +11,7 @@ struct ContentView: View {
     @StateObject private var viewModel = ContentViewModel()
     
     @State private var showingSearchLocationView = false
-    @State private var location = ""
+    @State private var locationText = ""
     
     var body: some View {
         ZStack {
@@ -28,7 +28,7 @@ struct ContentView: View {
                             .padding(.trailing, 10)
                     }
                     .padding(.trailing, 5)
-                    .sheet(isPresented: $showingSearchLocationView) { SearchLocationView(viewModel: viewModel, location: $location) }
+                    .sheet(isPresented: $showingSearchLocationView) { SearchLocationView(viewModel: viewModel, location: $locationText) }
                 }
                 
                 if let forecast = viewModel.forecast {

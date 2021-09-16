@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct SearchLocationView: View {
-    @Environment(\.presentationMode) var presentationMode
+    @Environment(\.dismiss) var dismiss
     
     @ObservedObject var viewModel: ContentViewModel
     
@@ -16,17 +16,23 @@ struct SearchLocationView: View {
     
     var body: some View {
         VStack {
-            HStack(spacing: 15) {
+            HStack {
                 TextField("Enter any location or zip code", text: $location)
                     .textContentType(.location)
                     .padding(8)
                     .background(Color.black.opacity(0.05))
                     .cornerRadius(10)
+                    .submitLabel(.done)
+                    .onSubmit {
+                        viewModel.getWeather(for: location) { locationIsValid in
+                            if locationIsValid {
+                                dismiss()
+                            }
+                        }
+                        
+                    }
                 
-                Button { viewModel.getWeather(for: location) } label: {
-                    Image(systemName: "magnifyingglass")
-                        .font(.title3)
-                }
+                Button("Cancel", role: .cancel) { dismiss() }
             }.padding()
             Spacer()
         }.alert(item: $viewModel.alertItem) { alertItem in
@@ -41,7 +47,3 @@ struct SearchLocationView_Previews: PreviewProvider {
         SearchLocationView(viewModel: ContentViewModel(), location: .constant(""))
     }
 }
-
-//Button("Cancel") {
-//    presentationMode.wrappedValue.dismiss()
-//}

@@ -75,12 +75,12 @@
 			path = Utilities;
 			sourceTree = "<group>";
 		};
-		7C56F8AB26EA4CB60027CC6C /* Model */ = {
+		7C56F8AB26EA4CB60027CC6C /* Models */ = {
 			isa = PBXGroup;
 			children = (
 				7CEBC55326EAB2C400882C8F /* Forecast.swift */,
 			);
-			path = Model;
+			path = Models;
 			sourceTree = "<group>";
 		};
 		7C7BEAD826E8714A00044459 = {
@@ -98,10 +98,10 @@
 			children = (
 				7C7BEADE26E8714A00044459 /* WetheryApp.swift */,
 				7C95E71D26EB90B8003EC098 /* APIKey.swift */,
-				7C95E72026EB915D003EC098 /* View */,
-				7C95E72126EB9E3F003EC098 /* ViewModel */,
+				7C95E72026EB915D003EC098 /* Views */,
+				7C95E72126EB9E3F003EC098 /* ViewModels */,
 				7C56F8A426EA3D1A0027CC6C /* Utilities */,
-				7C56F8AB26EA4CB60027CC6C /* Model */,
+				7C56F8AB26EA4CB60027CC6C /* Models */,
 				7C7BEAE026E8714B00044459 /* Assets.xcassets */,
 			);
 			path = Shared;
@@ -133,21 +133,21 @@
 			path = macOS;
 			sourceTree = "<group>";
 		};
-		7C95E72026EB915D003EC098 /* View */ = {
+		7C95E72026EB915D003EC098 /* Views */ = {
 			isa = PBXGroup;
 			children = (
 				7C7BEADF26E8714A00044459 /* ContentView.swift */,
 				7C01341D26EEE33D00F50BF8 /* SearchLocationView.swift */,
 			);
-			path = View;
+			path = Views;
 			sourceTree = "<group>";
 		};
-		7C95E72126EB9E3F003EC098 /* ViewModel */ = {
+		7C95E72126EB9E3F003EC098 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
 				7C95E72226EB9F13003EC098 /* ContentViewModel.swift */,
 			);
-			path = ViewModel;
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -194,7 +194,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1250;
-				LastUpgradeCheck = 1250;
+				LastUpgradeCheck = 1300;
 				TargetAttributes = {
 					7C7BEAE426E8714B00044459 = {
 						CreatedOnToolsVersion = 12.5.1;
@@ -329,6 +329,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -382,6 +383,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SWIFT_COMPILATION_MODE = wholemodule;
@@ -398,7 +400,7 @@
 				DEVELOPMENT_TEAM = 4S979PJSPU;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = iOS/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -420,7 +422,7 @@
 				DEVELOPMENT_TEAM = 4S979PJSPU;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = iOS/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -440,6 +442,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 4S979PJSPU;
@@ -464,6 +467,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 4S979PJSPU;

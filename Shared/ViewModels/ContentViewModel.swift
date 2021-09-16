@@ -17,13 +17,15 @@ final class ContentViewModel: ObservableObject {
     
     let dateFormatter = DateFormatter()
     
-    func getWeather(for location: String) {
+    func getWeather(for location: String, completion: @escaping (Bool) -> ()) {
         
         getCoordinateFrom(address: location) { coordinate, error in
             guard let coordinate = coordinate, error == nil else {
-                print("Invalid Location")
+                self.alertItem = AlertContext.invalidLocation
+                completion(false) // Location is invalid
                 return
             }
+            completion(true) // Location is valid
             
             self.getCityFrom(coordinate: coordinate) { city, error in
                 guard let city = city, error == nil else {
@@ -37,7 +39,6 @@ final class ContentViewModel: ObservableObject {
                         switch result {
                         case .success(let forecast):
                             self.forecast = forecast
-                            
                             self.dateFormatter.dateFormat = "EEEE" // Display the date of the week
                             
                         case .failure(let error):
@@ -58,12 +59,12 @@ final class ContentViewModel: ObservableObject {
     }
     
     /// Change any location (City, Country, Address, Postal Code, etc.) into coordinates.
-    private func getCoordinateFrom(address: String, completion: @escaping(_ coordinate: CLLocationCoordinate2D?, _ error: Error?) -> () ) {
+    private func getCoordinateFrom(address: String, completion: @escaping (_ coordinate: CLLocationCoordinate2D?, _ error: Error?) -> () ) {
         CLGeocoder().geocodeAddressString(address) { completion($0?.first?.location?.coordinate, $1) }
     }
     
     /// Change any coordinate to a city.
-    private func getCityFrom(coordinate: CLLocationCoordinate2D, completion: @escaping(_ cityName: String?, _ error: Error?) -> () ) {
+    private func getCityFrom(coordinate: CLLocationCoordinate2D, completion: @escaping (_ cityName: String?, _ error: Error?) -> () ) {
         CLGeocoder().reverseGeocodeLocation(CLLocation(latitude: coordinate.latitude, longitude: coordinate.longitude)) { completion($0?.first?.locality, $1) }
     }
     
